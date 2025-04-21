@@ -1,0 +1,467 @@
+/* Responsive CSS for Call 2 Cady */
+
+/* Large Desktops (1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    .shows-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .episodes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Desktops (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .shows-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .episodes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablets and Small Desktops (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .shows-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-logo {
+        grid-column: span 3;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .app-content {
+        flex-direction: column;
+    }
+    
+    .app-info, .app-image {
+        width: 100%;
+    }
+    
+    .app-image {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .app-image img {
+        max-height: 400px;
+    }
+}
+
+/* Mobile Landscape (576px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: var(--secondary-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+    
+    .shows-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding: 3rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .footer-logo {
+        grid-column: span 2;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .trending-item {
+        flex-direction: column;
+    }
+    
+    .trending-number {
+        margin-bottom: 0.5rem;
+    }
+    
+    .trending-content {
+        width: 100%;
+    }
+    
+    .app-content {
+        flex-direction: column;
+    }
+    
+    .app-info, .app-image {
+        width: 100%;
+    }
+    
+    .app-image {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .app-image img {
+        max-height: 350px;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .footer-bottom-links {
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media only screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--secondary-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+    
+    .shows-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-logo, .footer-links, .footer-contact {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .cast-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .episode-info-section .episode-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .episode-info-section .episode-meta span {
+        margin-bottom: 0.5rem;
+    }
+    
+    .video-metrics {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .video-metrics > div {
+        margin-bottom: 0.5rem;
+    }
+    
+    .trending-item {
+        flex-direction: column;
+    }
+    
+    .trending-number {
+        margin-bottom: 0.5rem;
+    }
+    
+    .trending-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .trending-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .app-content {
+        flex-direction: column;
+    }
+    
+    .app-info, .app-image {
+        width: 100%;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+    }
+    
+    .app-button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .app-image {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .app-image img {
+        max-height: 300px;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .footer-bottom-links {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-bottom-links a {
+        margin: 0.3rem 0;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .faq-item h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Specific Adjustments for Navigation */
+@media only screen and (max-width: 991px) {
+    .navbar {
+        padding: 1rem 15px;
+    }
+    
+    .logo a {
+        font-size: 1.5rem;
+    }
+    
+    /* Hamburger Menu Animation */
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Video Carousel Responsiveness */
+@media only screen and (max-width: 767px) {
+    .video-carousel {
+        height: 250px;
+    }
+    
+    .carousel-item {
+        flex: 0 0 280px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .video-carousel {
+        height: 200px;
+    }
+    
+    .carousel-item {
+        flex: 0 0 220px;
+    }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+    .nav-links {
+        height: -webkit-fill-available;
+    }
+}
